@@ -1,5 +1,3 @@
-FROM registry.redhat.io/ubi7/ubi
-
-USER 1001
+FROM registry.access.redhat.com/ubi7/ubi
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
