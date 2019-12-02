@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi7/ubi
 
 RUN yum install sudo -y
 
-RUN useradd manager && echo "manager:manager" | chpasswd && adduser manager sudo
+RUN adduser -m manager && echo "manager:manager" | chpasswd && adduser manager sudo
 
 USER manager
 
